@@ -2,10 +2,9 @@ pipeline {
     agent any
 
     stages {
-        stage('run python script') {
+        stage('python version') {
             steps {
-                echo "above script ${env.WORKSPACE}"
-                
+                sh "python3 --version"
             }
         }
     }
