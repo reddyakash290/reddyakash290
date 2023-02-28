@@ -2,10 +2,10 @@ pipeline {
     agent any
 
     stages {
-        stage('build') {
+        stage('run python script') {
             steps {
-                echo 'build'
-                sh "python hello.py"
+                echo 'above script'
+                sh 'python3 hello.py'
             }
         }
     }
