@@ -4,8 +4,8 @@ pipeline {
     stages {
         stage('run python script') {
             steps {
-                echo 'above script ${env.WORKSPACE}'
-                sh 'python3 hello.py'
+                echo "above script ${env.WORKSPACE}"
+                
             }
         }
     }
